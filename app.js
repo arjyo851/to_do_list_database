@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 require("dotenv").config();
+console.log(process.env);
 
 const app = express();
 // let items = ["DSA","Badminton","gym"];
@@ -147,10 +148,10 @@ app.post("/work",function(req,res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+  port = 3000;
 }
 
 
 app.listen(port, function () {
-    console.log("Server started from port 3000");
+    console.log("Server started succesfully!!!");
 });
