@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static("public"));
 let Password = process.env.PASSWORD;
 // console.log(password.toString());
-mongoose.connect("mongodb+srv://admin-arjyo:"+Password.toString()+"@cluster0.qwodm.mongodb.net/toDoListDb",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://admin-arjyo:"+Password+"@cluster0.qwodm.mongodb.net/toDoListDb",{useNewUrlParser:true});
 
 const itemsSchema = {
     name: String
