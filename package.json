@@ -8,9 +8,13 @@
   },
   "author": "Arjyo Chakraborty",
   "license": "ISC",
+  "engines": {
+    "node": "14.17.3"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
+    "env": "^0.0.2",
     "express": "^4.17.1",
     "lodash": "^4.17.21",
     "mongoose": "^6.0.12",
