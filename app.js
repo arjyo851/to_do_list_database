@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.static("public"));
-const Password = process.env.PASSWORD;
+let Password = process.env.PASSWORD;
 // console.log(password.toString());
 mongoose.connect("mongodb+srv://admin-arjyo:"+Password.toString()+"@cluster0.qwodm.mongodb.net/toDoListDb",{useNewUrlParser:true});
 
