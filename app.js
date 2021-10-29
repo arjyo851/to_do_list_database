@@ -5,7 +5,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 require("dotenv").config();
-console.log(process.env);
+// console.log(process.env);
 
 const app = express();
 // let items = ["DSA","Badminton","gym"];
